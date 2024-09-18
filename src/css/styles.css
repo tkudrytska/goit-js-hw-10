@@ -9,3 +9,197 @@
 @import url('./base.css');
 @import url('./container.css');
 @import url('./animations.css');
+
+input {
+  display: inline-block;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 272px;
+  max-height: 40px;
+  margin-top: 36px;
+  margin-left: 36px;
+  padding: 8px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  cursor: pointer;
+}
+
+button[data-start] {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 75px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 8px;
+  transform: background-color 250ms ease-in;
+}
+
+button[data-start]:hover,
+button[data-start]:focus {
+  background-color: #6c8cff;
+}
+
+button[data-start]:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  width: 346px;
+  margin-top: 32px;
+  margin-left: 36px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  text-transform: uppercase;
+}
+
+.form {
+  display: block;
+  margin-top: 36px;
+  margin-left: 36px;
+  max-width: 360px;
+}
+
+.form label {
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.form label input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  min-width: 328px;
+  max-width: 360px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-left: 0;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form label input:hover {
+  border-color: #000;
+}
+
+.form > label > input:active {
+  border-color: #4e75ff;
+  outline: transparent;
+}
+
+.form fieldset {
+  display: flex;
+  gap: 48px;
+  justify-content: space-between;
+  max-width: 360px;
+  width: 264px;
+  padding: 24px 48px 8px 48px;
+  margin-top: 16px;
+}
+
+.form fieldset legend {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.form fieldset > label {
+  display: inline-flex;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+.form fieldset > label > input {
+  border: 1px solid #000;
+  border-radius: 14px;
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0 14px 0 0;
+  cursor: pointer;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form fieldset > label > input:hover,
+.form fieldset > label > input:focus {
+  border-color: #000;
+}
+
+.form fieldset > label > input:active {
+  border-color: #4e75ff;
+}
+
+.form fieldset > label > input:checked {
+  background: #4e75ff;
+}
+
+.form button {
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  min-width: 360px;
+  height: 40px;
+  margin-top: 24px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  outline: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form button:hover,
+.form button:focus {
+  background-color: #6c8cff;
+}

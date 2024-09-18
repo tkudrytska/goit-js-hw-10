@@ -21,6 +21,8 @@ ul {
 a {
   color: currentColor;
   text-decoration: none;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 button {
